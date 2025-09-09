@@ -24,7 +24,7 @@
   width: 65%;
   height: 65%;
   background-color: transparent; 
-  background-image: url('PNG/Main\ screen.png');
+  background-image: url('PNG/main_screen.png');
   background-size: cover;
   border-radius: 70px;
   position: absolute;
@@ -290,3 +290,4 @@
 }
 
 /* #endregion */
+
