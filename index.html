@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+  <title>Emotional Archive</title>
+  <link rel="stylesheet" href="intro.css">
+  <link rel="stylesheet" href="base_style.css">
+  <link rel="stylesheet" href="entire_layout.css">
+  <link rel="stylesheet" href="Page (2).css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="deco_style.css">
+  <link rel="stylesheet" href="page 1.css">
+  <link rel="stylesheet" href="z-index.css">
+</head>
+<body>
+
+
+
+ <div id="intro">
+  <div class="intro-bg 1"></div>
+  <div class="인트로_나뭇잎2"></div>
+  <div class="인트로_나뭇잎3"></div>
+  <div class="그림자_배경"></div>
+
+  <div class="인트로_전체화면"> <!-- 전체 배경 박스 -->
+    <div class="intro-border-box"> <!-- 테두리 박스 -->
+     <!-- 둘 다 intro-text를 공유하지 말고, 감싸주는 wrapper로 분리해 -->
+<div class="intro-line-wrapper">
+  <p class="intro-text 응가">“오늘, 당신의 감정은 어떤 색이었나요?”</p>
+</div>
+<div class="intro-line-wrapper hidden" id="응까-wrapper">
+  <p class="intro-text 응까">“감정이 쉬어갈 작은 방을 만들어드릴게요.”</p>
+</div>
+
+    </div>
+  </div>
+</div>
+
+
+  <div id="background"></div>
+    <div class="scroll-container">
+    <section id="page1" class="page">
+      <div class="page1-box">
+        
+      <div class="식물_프레임_공통 식물1"></div>
+      <div class="식물_프레임_공통 식물2"></div>
+      <div class="식물_프레임_공통 식물3"></div>
+      <div class="식물_프레임_공통 식물4"></div>
+      <div class="식물_프레임_공통 식물5"></div>
+          <div class="메인화면"></div>
+          <div class="날씨위젯">
+            <div class="날씨위젯_부모">
+            <div class="rounded-box"></div>
+            <div class="rounded-2box"></div></div>
+            </div>
+            
+            <div class="탭박스"> <!-- 조부모 -->
+              <div class="폴더탭박스"> <!-- 부모 -->
+                <div class="탭 파랑탭"></div>
+                <div class="탭 노랑탭"></div>
+                <div class="탭 빨강탭"></div>
+              </div>
+        </div>
+        <div class="공통_꾸미기"></div>
+        <div class = "공통_꾸미기 발자국"></div>
+        <div class = "공통_꾸미기 로고"></div>
+         <div class = "공통_꾸미기 하트"></div>
+      
+
+        <div class="마카롱들"> <div class="마카-버튼-wrapper"> <button id="toggleBtn" class="마카-toggle">◀</button></div>
+        <div class="마카롱_정렬" id="macaronPanel">
+          <div class = "마카롱_뵤뵤 마카1"></div>
+          <div class = "마카롱_뵤뵤 마카2"></div>
+          <div class = "마카롱_뵤뵤 마카3"></div>
+          <div class = "마카롱_뵤뵤 마카4"></div>
+          <div class = "마카롱_뵤뵤 마카5"></div>
+          <div class = "마카롱_뵤뵤 마카6"></div></div>
+          
+          <div class = "폴더들임"><div class="폴더-버튼-wrapper"> <button id="toggleBtn2" class="폴더-toggle">◀</button></div>
+            <div class = "폴더들_정렬" id="polder">
+          <div class = "폴더들 폴더1"></div>
+          <div class = "폴더들 폴더2"></div>
+          <div class = "폴더들 폴더3"></div></div></div></div>
+    </section>
+
+    
+    <section id="page2" class="page">
+      <div class="container">
+     <!-- ✨ 여기에 추가하면 좋아! -->
+    <div class="장식레이어">
+    <div class="보조꽃 꽃1"></div>
+    <div class="보조꽃 꽃2"></div>
+    <div class="보조꽃 꽃3"></div>
+    <div class="보조꽃 꽃4"></div>
+    <div class="보조꽃 꽃5"></div>
+    <div class="보조꽃 꽃6"></div>
+    <div class="보조꽃 꽃7"></div>
+    <div class="보조꽃 별2"></div>
+    <div class="보조꽃 별3"></div>
+    <div class="보조꽃 별4"></div>
+     <div class="보조꽃 별7"></div>
+   </div>
+    <div class="그룹-상단-묶음">
+      <div class="감정기록탭들"></div>
+      <div class="그룹-상단-묶음2">
+        <div class="감정아카이브_디자인"></div>
+        <div class="감정아카이브"></div>
+      </div>
+    </div>
+    <div class="전체_레이아웃">
+      <div class="그룹-왼쪽묶음">
+        <div class="원형바다그림"></div>
+        <img onclick="alert('감정 기록: 🧸 오늘은 무기력했어요.')" class="노트패드" src="PNG/03_Notepad.png">
+      </div>
+            <!-- .container보다 z-index 낮은 꽃 -->
+            <div class="보조꽃이 밑꽃"></div>
+      <div class="오렌지주스">
+        <div class="오렌지주스그림자"></div>
+        <img src="PNG/lemonade.png" alt="주스" />
+      </div>
+      <div class="그룹-가운데묶음">
+        <div class="식물배경">
+          <div class="식물배경그림자"></div>
+          <img src="PNG/Plant background.png" alt="식물" />
+        </div>
+        <div class="팬케이크박스">
+          <img class="배경" src="PNG/Waite set.png" alt="배경">
+          <div class="콘텐츠-wrapper">
+            <img class="콘텐츠" src="PNG/Bakery Waffle.png" alt="와플">
+          </div>
+           <div class="반짝반짝 별"></div>
+            <div class="반짝반짝 별6"></div>
+            </div>
+      </div>
+      <div class="노트북">
+        <img class="노트북" src="PNG/Note.png" alt="노트 아이콘"></div>
+      <div class="팔레트">
+        <img class="팔레트" src="PNG/02_Palette.png" alt="팔레트 아이콘">
+      </div>
+      <div class="그룹-선택그룹" id="선택그룹컨테이너"> 
+        <div class="선택목록">
+          <img class="선택그룹" src="PNG/Emotion Record_OFF.png" alt="off 탭"></div>
+          <div class="설명">🌼 행복했던 날이에요!</div>
+      </div>
+      <div class="보조꽃꽃이 밑꽃이"></div>
+            <div class="보조꽃꽃이 밑꽃삼"></div>
+      <div class="오른쪽_레이아웃">
+        <div class="감정칩-wrapper" id="감정칩Wrapper">
+        <div class="감정칩 행복" onclick="toggleSpeech(this)">😊 행복<div class="말풍선">오늘은 따뜻한 햇살 같았어요 ☀️</div></div>
+        <div class="감정칩 우울" onclick="toggleSpeech(this)">😢 우울<div class="말풍선">마음이 흐릿했지만 괜찮아요 🌧️</div></div>
+        </div>
+      </div>
+    </div>
+  </div></section>
+    <section id="page3" class="page">C 콘텐츠</section>
+  </div>
+<nav class="page-nav">
+  <button onclick="document.getElementById('page1').scrollIntoView({behavior: 'smooth', block: 'start', inline: 'start'})"></button>
+  <button onclick="document.getElementById('page2').scrollIntoView({behavior: 'smooth'});"></button>
+  <button onclick="document.getElementById('page3').scrollIntoView({behavior: 'smooth'})"></button>
+</nav>
+
+
+
+</body>
+<script src="script.js"></script>
+</html>

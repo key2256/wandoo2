@@ -1,0 +1,134 @@
+/* 장식 요소들 */
+    .오렌지주스그림자 {
+      position: absolute; top: 0px; left: 0px;
+      width: 300px; height: 600px;
+      background-color: transparent;
+      border-radius: 70px 0px 70px 70px;
+      box-shadow: inset 3px 10px 5px rgba(95, 91, 91, 0.2);}
+    .식물배경그림자 {
+      position: absolute; top: 0px; left: 0px;
+      width: 350px; height: 230px;
+      background-color: transparent;
+      border-radius: 0px 70px 0px 70px;
+      box-shadow: inset 3px 10px 5px rgba(95, 91, 91, 0.3);}
+    /* #region z-index 장식꽃들 */
+    .장식레이어 {
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+      pointer-events: none; /* 마우스 클릭 막지 않기 */ }
+  .보조꽃 {
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none; /* 클릭 막지 않게 할 수 있음 */
+    }
+  .꽃1 { background-image: url('PNG/05_flower.png');
+    width: 100px; height: 100px;
+    top: 710px; left: 350px;
+     }
+  .꽃3{
+    background-image: url('PNG/09_flower.png');
+    width: 150px; height: 150px;
+    top: 330px;
+    left: 390px;
+  }
+  .꽃4{
+    background-image: url('PNG/06_flower.png');
+    width: 100px; height: 100px;
+    top: 170px;
+    left: 760px;
+  }
+  .꽃5{
+    background-image: url('PNG/10_flower.png');
+    width: 150px; height: 150px;
+    top: 350px;
+    left: 1080px;
+  }
+  .꽃6{
+    background-image: url('PNG/05_flower.png');
+    width: 70px; height: 70px;
+    top: 440px;
+    left: 1620px;
+  }
+  .꽃7{
+    background-image: url('PNG/03_flower.png');
+    width: 100px; height: 100px;
+    top: 550px;
+    left: 1420px;
+  }
+  .별2{
+    background-image: url('PNG/04_Twinkling\ Star.png');
+    width: 100px; height: 100px;
+    top: 790px;
+    left: 730px;
+  }
+   .별3{
+    background-image: url('PNG/STAR\ UI.png');
+    width: 100px; height: 100px;
+    top: 600px;
+    left: 1100px;
+    transform: rotate(60deg); /* 🌼 60도 회전 */
+  }
+  .반짝반짝 {
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none; /* 클릭 막지 않게 할 수 있음 */
+}
+  .별{
+    background-image: url('PNG/03_Masking\ tape.png');
+    width: 180px; height: 180px;
+    top: -35px;
+    left: -40px;
+  }
+  .별6{
+    background-image: url('PNG/10_Twinkling\ Star.png');
+    width: 220px; height: 220px;
+    top: 160px;
+    left: 750px;
+    transform: scaleY(-1);
+  }
+  .별7{
+    background-image: url('PNG/01_Twinkling\ Star.png');
+    width: 100px; height: 100px;
+    top: 320px;
+    left: 1670px;
+  }
+  .보조꽃이 {
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none; /* 클릭 막지 않게 할 수 있음 */
+    }
+  .밑꽃{
+    background-image: url('PNG/07_flower.png');
+    width: 250px; height: 250px;
+    top: 420px;
+    left: 30px;   
+  }
+   .보조꽃꽃이 {
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none; /* 클릭 막지 않게 할 수 있음 */
+    }
+  .밑꽃이{
+    background-image: url('PNG/08_flower.png');
+    width: 200px; height: 200px;
+    top: 200px;
+    left: 1350px;   
+  }
+  .밑꽃삼{
+    background-image: url('PNG/03_Leaf_art.png');
+    width: 70px; height: 70px;
+    top: 320px;
+    left: 1430px;
+     transform: rotate(60deg);
+  }
+  .그룹-선택그룹 {
+  position: relative; display: flex; flex-direction: column; 
+  gap: 20px; top: -350px; left: 1400px;
+  align-items: flex-end;
+  width: fit-content; 
+  height: 20px;
+  }

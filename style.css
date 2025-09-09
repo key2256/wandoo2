@@ -1,0 +1,10 @@
+
+/* ================= 공통 초기 설정 ================= */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      display: flex; justify-content: center; align-items: center;
+      min-height: 100vh; background-color: #FF8080;
+      position: relative; z-index: 0;
+      overflow: hidden; /* 스크롤 안 생기게 */
+    }
+

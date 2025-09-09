@@ -1,0 +1,65 @@
+/* 전체 레이아웃 관련 */
+    .container { /*==============z-index: 1;=================*/
+      width: 95%; max-width: 1920px; height: 900px;
+      background-color: #FCEDCA; border-radius: 70px;
+    .container > div:not(.장식레이어) { position: absolute; z-index: 2; min-width: 50px; min-height: 50px; }
+    .콘텐츠-wrapper {
+      position: absolute; top: 5%; left: 5%; width: 90%; height: 90%;
+      filter: drop-shadow(3px 4px 12px rgba(0, 0, 0, 0.2));
+    .콘텐츠-wrapper img {
+      width: 100%; height: 100%; object-fit: contain;
+      border-radius: inherit;
+    }
+  }}
+    /* ================= 오른쪽 영역 ================= */
+    .오른쪽_레이아웃 {
+      position: absolute; top: 210px; left: 1120px;
+      width: 500px; height: 600px;
+      background-color: rgba(180, 220, 255, 0.3);
+      background-image: url('PNG/Waite\ set.png');
+      background-size: cover; background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 70px; border: 3px outset #FF8080;
+      box-shadow: inset 3px 10px 5px rgba(95, 91, 91, 0.2);
+      display: flex; flex-direction: column; align-items: center;
+    }
+    /* ================= 반응형 ================= */
+    @media (max-width: 768px) {
+      .감정아카이브 { font-size: 12px; }
+      .container > div { border-width: 0.5px; }
+    }
+    /* #endregion */
+  /* #region 화면 전환 */  
+.scroll-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  scroll-behavior: smooth;
+   -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-x: scroll;
+   scroll-snap-type: x mandatory;
+}
+.page {
+  flex: none;
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+.container::-webkit-scrollbar {
+  display: none;
+}
+.page-nav {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}

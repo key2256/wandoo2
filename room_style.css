@@ -1,0 +1,11 @@
+#집에가고싶다{ 
+ position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: 10005; overflow: hidden;}
+
+
+.방의_이미지{
+width: 95%; height: 95%; position: relative; overflow: hidden; display: flex;
+background-color: transparent; background-image: url('방의요소 (1).png');
+
+
+
+}

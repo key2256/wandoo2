@@ -1,0 +1,181 @@
+#intro {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+.인트로_전체화면{
+width: 100vw; height: 100vh; position: relative; display: flex; background-color: #FFF9EC; justify-content: center; align-items: center; }
+
+
+  .그림자_배경{width: 100vw; height: 100vh; display: flex; background: url(PNG/02_test.png) no-repeat center center; position: absolute;z-index: 10000;
+transform: scale(1.5);  opacity: 0.1;
+  filter: blur(2px); }
+
+.intro-bg{
+  position: absolute; top: 10%; left: 25%;
+  transform: translate(-50%, 50%); /* 중심 기준으로 정렬 */
+  width: 130vw; height: 130vh;
+  background: url('PNG/01_Leaf.png') no-repeat center center;
+  background-size: contain; display: flex; justify-content: center; align-items: center; z-index: 9999; 
+ animation: sunlightWave 10s ease-in-out infinite;
+
+}
+
+@keyframes sunlightWave {
+  0% {
+    filter: brightness(100%) blur(0px);
+    transform: scale(1) rotate(0deg);
+  }
+  25% {
+    filter: brightness(103%) blur(0.5px);
+    transform: scale(1.01) rotate(5deg);
+  }
+  50% {
+    filter: brightness(106%) blur(1px);
+    transform: scale(1.02) rotate(3deg);
+  }
+  75% {
+    filter: brightness(103%) blur(0.5px);
+    transform: scale(1.01) rotate(0deg);
+  }
+  100% {
+    filter: brightness(100%) blur(0px);
+    transform: scale(1) rotate(4deg);
+  }
+
+}
+
+.인트로_나뭇잎2{  position: absolute; top: -30%; left: -60%;
+  transform: translate(-50%, 50%); /* 중심 기준으로 정렬 */
+  width: 130vw; height: 130vh;
+  background: url('PNG/02_Leaf.png') no-repeat center center;
+  background-size: contain; display: flex; justify-content: center; align-items: center; z-index: 9999;
+ animation: sunlightWave2 10s ease-in-out infinite;
+
+}
+
+@keyframes sunlightWave2 {
+  0% {
+    filter: brightness(100%) blur(0px);
+    transform: scale(1) rotate(3deg);
+  }
+  25% {
+    filter: brightness(103%) blur(0.5px);
+    transform: scale(1.02) rotate(0deg);
+  }
+  50% {
+    filter: brightness(106%) blur(1px);
+    transform: scale(1) rotate(6deg);
+  }
+  75% {
+    filter: brightness(103%) blur(0.5px);
+    transform: scale(1.02) rotate(0deg);
+  }
+  100% {
+    filter: brightness(100%) blur(0px);
+    transform: scale(1) rotate(3deg);
+  }}
+
+  .인트로_나뭇잎3 { position: absolute; top: 50%; left: -50%;
+  transform: translate(-50%, 50%); /* 중심 기준으로 정렬 */
+  width: 130vw; height: 130vh;
+  background: url('PNG/03_Leaf.png') no-repeat center center;
+  background-size: contain; display: flex; justify-content: center; align-items: center; z-index: 9999;
+ animation: sunlightWave3 10s ease-in-out infinite;
+
+}
+
+@keyframes sunlightWave3 {
+  0% {
+    filter: brightness(100%) blur(0px);
+    transform: scale(1) rotate(0deg);
+  }
+  25% {
+    filter: brightness(103%) blur(0.5px);
+    transform: scale(1.01) rotate(3deg);
+  }
+  50% {
+    filter: brightness(106%) blur(1px);
+    transform: scale(1.02) rotate(1deg);
+  }
+  75% {
+    filter: brightness(103%) blur(0.5px);
+    transform: scale(1.01) rotate(5deg);
+  }
+  100% {
+    filter: brightness(100%) blur(0px);
+    transform: scale(1) rotate(0deg);
+  }}
+.intro-border-box {
+  width: 95%;
+  height: 90%;
+  border: 5px solid #F3B49D;
+  border-radius: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+
+/* 공통 스타일 */
+.intro-text {
+  font-size: 24px;
+  color: #f57c00;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid orange;
+  display: inline-block;
+  width: 28ch;
+}
+
+.intro-line-wrapper {
+  text-align: center;
+}
+/* 숨기기 */
+.hidden {
+  display: none !important;
+}
+
+/* 응가 타이핑 */
+.응가 {
+  width: 0;
+  animation: typing 3s steps(28, end) forwards, blink 1s step-end infinite;
+}
+
+/* 응가 페이드 아웃 
+.fade-out {
+  animation: fadeOut 1s forwards;
+}*/
+
+/* 응까 타이핑 (JS에서 추가됨) */
+.응까.typing {
+  width: 0;
+  display: inline-block;
+  animation: typing 3s steps(32, end) forwards, blink 3s step-end infinite;
+}
+
+/* 타이핑 키프레임 */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 34ch }
+}
+
+/* 깜빡이는 커서 */
+@keyframes blink {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: orange; }
+}
+
+/* 사라짐 효과 */
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+

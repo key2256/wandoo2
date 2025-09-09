@@ -1,0 +1,343 @@
+/* z-index 레이어 정리 */
+      position: relative; z-index: 0;
+      overflow: hidden; /* 스크롤 안 생기게 */
+    }
+    /* #region z-index 설정 */
+      margin: 0 auto; position: relative; z-index: 1; overflow: hidden;
+      box-shadow: inset -10px 0px 5px rgba(95, 91, 91, 0.2);
+      }
+    /*==============z-index: 2;=================*/
+      z-index: 2;
+    }
+    /*==============z-index: 3;=================*/
+      pointer-events: none; z-index: 3;
+    }
+      pointer-events: none; z-index: 3;
+    }
+    /* #endregion */
+      z-index: 5; /* container 안에서 가장 위로! */
+    }
+    z-index: 1;
+    }
+    z-index: 1;
+    }
+    z-index: -2;
+    }
+    z-index: 5;
+    }
+  z-index: 7;
+}
+.선택목록 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(4px 4px 6px rgba(0,0,0,0.2));
+}
+  .선택그룹 {
+   width: 250px;
+    height: auto;
+    object-fit: contain;
+}
+.선택목록:nth-child(2) {
+  margin-left: 10px;
+}
+    .팔레트 img {
+      top: 650px;  left: 1250px;
+      width: 240px;  height: auto;
+      object-fit: contain;
+      border-radius: inherit;
+      display: flex; flex-direction: column;
+      position: absolute;
+      background-repeat: no-repeat;
+      z-index: 10;
+      transform: rotate(-30deg); /* 🌼 60도 회전 */
+      filter: drop-shadow(4px 4px 6px rgba(0,0,0,0.2));
+    }
+    .노트북 img {
+      top: 400px; left: 1150px;
+      width: 190px;  height: auto;
+      object-fit: contain;
+      border-radius: inherit;
+      display: flex; flex-direction: column;
+      position: absolute;
+      background-repeat: no-repeat;
+      z-index: 10;
+      transform: rotate(15deg); /* 🌼 60도 회전 */
+      filter: drop-shadow(4px 4px 6px rgba(0,0,0,0.2));
+    }
+    /* #endregion */
+    /* #region 전체 레이아웃 ~ 반응형 */
+    /* ================= 전체 레이아웃 ================= */
+    .전체_레이아웃 {
+      position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+      width: 95%; height: 100%;
+    }
+    /* ================= 상단 영역 ================= */
+    .그룹-상단-묶음 {
+      position: absolute; top: 110px; left: 465px; width: 100%;
+      display: flex; flex-direction: row; gap: 0px;
+      justify-content: flex-start; align-items: flex-end;
+    }
+    .감정기록탭들 {
+      width: 400px; height: 80px;
+      background-color: rgba(255, 200, 240, 0.3);
+      border-radius: 70px;
+      background-image: url('PNG/03_test.png');
+      background-size: cover; background-position: 0% 90%; background-repeat: no-repeat;
+      box-shadow: inset 3px 10px 5px rgba(95, 91, 91, 0.2);
+    }
+    .그룹-상단-묶음2 {
+      left: 420px; position: absolute;
+      display: flex; flex-direction: column; gap: 0px;
+      align-items: flex-start;
+    }
+    .감정아카이브_디자인 {
+      width: 780px; height: 40px;
+      background-color: #FF9494;
+      border-radius: 70px 70px 0px 0px;
+    }
+    .감정아카이브 {
+      width: 780px; height: 80px;
+      background-color: rgba(230, 37, 37, 0.0);
+      background-image: url('PNG/Emotional\ Archive.png');
+      background-size: cover; background-position: center;
+      background-repeat: no-repeat;
+    }
+    /* ================= 왼쪽 묶음 ================= */
+    .그룹-왼쪽묶음 {
+      position: absolute; top: 110px; left: 100px;
+      width: 300px; display: flex; flex-direction: column;
+      align-items: center; gap: 20px;
+    }
+    .원형바다그림 {
+      width: 300px; height: 300px;
+      background-color: rgba(100, 180, 255, 0.3);
+      border-radius: 50%;
+      box-shadow: inset 3px 10px 5px rgba(95, 91, 91, 0.2);
+      background-image: url('PNG/sea.png'); background-size: cover;
+      background-position: center; background-repeat: no-repeat;
+    }
+    .노트패드 {
+      width: 300px; height: 380px;
+      background-image: url('PNG/03_Notepad.png');
+      background-size: contain; background-position: bottom center;
+      background-repeat: no-repeat;
+      filter: drop-shadow(10px 20px 5px rgba(112, 108, 108, 0.3));
+    }
+    /* ================= 오렌지주스 박스 ================= */
+    .오렌지주스 {
+      position: absolute; top: 210px; left: 420px;
+      width: 300px; height: 600px;
+      background-color: rgba(255, 200, 100, 0.3);
+      border-radius: 70px 0px 70px 70px;
+      display: flex; flex-direction: column; align-items: center;
+    }
+    .오렌지주스 img {
+      top: 3%; left: 2%; width: 100%; height: 100%;
+      box-shadow: inset 3px 10px 5px rgba(95, 91, 91, 0.2);
+      object-fit: cover; object-position: 0% 60%;
+      border-radius: inherit;
+    }
+    /* ================= 가운데 묶음 ================= */
+    .그룹-가운데묶음 {
+      position: relative; top: 210px; left: 770px;
+      width: 300px; display: flex; flex-direction: column;
+      align-items: center; gap: 20px;
+    }
+    .식물배경 {
+      position: relative; width: 350px; height: 230px;
+      background-color: rgba(100, 255, 180, 0.3);
+      border-radius: 0px 70px 0px 70px;
+      box-shadow: inset 3px 10px 5px rgba(95, 91, 91, 0.2);
+    }
+    .식물배경 img {
+      width: 100%; height: 100%; object-fit: cover;
+      border-radius: inherit; object-position: 0% 60%;
+    }
+    .팬케이크박스 {
+      position: relative; width: 350px; height: 350px;
+      border: 3px outset #FF8080; border-radius: 70px;
+      box-shadow: inset 3px 10px 5px rgba(95, 91, 91, 0.2);
+    }
+    .팬케이크박스 .배경 {
+      width: 100%; height: 100%; object-fit: cover;
+      border-radius: inherit; z-index: 1; overflow: hidden;
+      filter: drop-shadow(10px 20px 5px rgba(112, 108, 108, 0.3));
+    }
+.page-nav button {
+  padding: 8px 14px;
+  background-color: #ffc8dd;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.page-nav button:hover {
+  background-color: #ffafcc;
+}
+/* 💡 완벽한 스크롤바 제거 */
+.scroll-container::-webkit-scrollbar {
+  display: none;             /* Chrome, Safari */
+}
+  /* #endregion */
+     /* #region 치치의 도움 */
+  .설명 {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 15px;
+    top: 10px;
+    right: 270px;
+    font-size: 14px;
+    color: #444;
+    opacity: 0;
+    transition: opacity 0.3s;
+    width: 200px;
+    z-index: 100;
+  }
+  .선택목록:hover .설명 {
+    opacity: 1;
+  }
+.감정칩 {
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  display: inline-block;
+  color: white;
+  margin: 5px;
+   opacity: 0;
+    transform: scale(0.7);
+    transition: all 0.6s ease-out;
+}
+.행복 { background-color: #FFB6C1; } /* 분홍색 */
+.우울 { background-color: #87CEFA; } /* 하늘색 */
+
+
+ 
+.감정칩-visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+  /* #endregion */  
+#background.bounce {
+  animation: bounce-fade 0.6s ease;
+}
+
+ #background {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background-color: #FFFACD;
+  transition: background-color 0s; /* 배경색은 즉시 변경 */
+}
+@keyframes bounce-fade {
+  0%   { transform: scale(1); opacity: 1; }
+  30%  { transform: scale(1.08); opacity: 0.85; }
+  50%  { transform: scale(0.98); opacity: 0.92; }
+  70%  { transform: scale(1.02); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.page {
+  min-height: 100vh;
+  transition: background-color 1s ease;
+}
+#page1 {
+  background-color: #FFE094; /* 연노랑 */
+}
+
+#page2 {
+  background-color: #FF8080; /* 연분홍 */
+}
+
+#page3 {
+  background-color: #E0E0E0; /* 회색톤 or 자유롭게 */
+}
+
+
+.page-nav {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.page-nav button {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  padding: 0;
+}
+
+.page-nav button.active {
+  background-color: white;
+}
+
+.page-nav button:hover {
+  transform: scale(1.3);
+}
+
+
+
+.감정칩 {
+  opacity: 0;
+  transform: scale(0.7);
+  transition: all 0.5s ease-out;
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.감정칩.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.말풍선 {
+  display: none;
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px 12px;
+  background: #fff4f4;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  font-size: 14px;
+  color: #333;
+  z-index: 10;
+  white-space: nowrap;
+  animation: fadeIn 0.3s ease;
+}
+
+.감정칩.active .말풍선 {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateX(-50%) translateY(10px); }
+  to   { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+
+
+#background {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  transition: background-color 1s ease;
+}
