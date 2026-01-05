@@ -1,3 +1,21 @@
+// 모든 마카롱 이미지를 선택
+const macaronImages = document.querySelectorAll('.macaron-trigger');
+const modal = document.getElementById('imageModal');
+const modalImg = document.getElementById('modalImg');
+
+// 각각의 마카롱 이미지에 클릭 이벤트 추가
+macaronImages.forEach(img => {
+    img.addEventListener('click', function() {
+        modal.style.display = "flex"; // 이미지 창 띄우기 (Flex로 중앙 정렬)
+        modalImg.src = this.src; // 클릭한 마카롱 이미지를 창에 띄움
+    });
+});
+
+// 이미지 창(모달)의 아무 곳이나 클릭하면 닫기
+modal.addEventListener('click', function() {
+    modal.style.display = "none";
+});
+
 // 선택탭 이미지 생성
 const container = document.getElementById("선택그룹컨테이너");
 const 이미지개수 = 2;
